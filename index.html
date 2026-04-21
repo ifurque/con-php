@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
+    <title>Forms con PHP</title>
 </head>
 <body>
-
     <article>
         <h2>Probando</h2>
         <p>je</p>
@@ -16,18 +15,21 @@
 
     <section>
         <h3>Ingrese 6 numeros a su gusto</h3>
-        <p> Restaremos estas 2 casiilas. 
-            </p>
-        <form method="post" action="form.php">
+        <p> Restaremos estas 2 casillas. </p>
+        <form method="post" action="resultados.php">
             <input type="text" name="num1">
             <input type="text" name="num2"> <br><br>
+
             <p>Sumaremos estas 2 casillas.</p>
-            <input type="text" name="num3">
+            <input type="text" name="num3" min="num4">
             <input type="text" name="num4"> <br><br>
+
             <p>Multipilicaremos estas 2 casillas.</p>
-            <input type="text" name="num5">
-            <input type="text" name="num6"> <br><br>
+            <input type="number" name="num5" min="1" max="100">
+            <input type="number" name="num6" min="1" max="100"> <br><br>
+
             <input type="submit" name="enviar">
+
             <h3> Ingrese su edad y Numero de dni</h3> <br>
             <input type="text" name="edad">
             <input type="text" name="dni">
